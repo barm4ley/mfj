@@ -1,0 +1,14 @@
+{
+    "create": {
+        "type": "object",
+        "properties": {
+            "num": {
+                "type": "number"
+            },
+            "str": {
+                "type": "string"
+            }
+        },
+        "required": ["num", "str"]
+    }
+}
