@@ -9,6 +9,7 @@ app.config['JSONSCHEMA_DIR'] = os.path.join(app.root_path, 'schemas')
 connection = pymongo.MongoClient("mongodb://localhost")
 db = connection.mfj
 reports = db.reports
+# Save reports collection handle to global config variable
 app.config['REPORTS_COLL'] = reports
 
 from app import views
